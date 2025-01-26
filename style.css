@@ -1,0 +1,436 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+	  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+	top: 0;
+	z-index: 1000;
+    color: #fff;
+    text-align: center;
+    background-image: url("https://img.freepik.com/fotos-premium/dieta-alimentos-estilo-vida-saludable-fondo-fitness-azul_937503-352.jpg");
+    background-repeat: no-repeat;
+ background-position: center;
+    background-size: cover;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    height: 150px; /* Specifica un'altezza per rendere visibile l'immagine */
+}
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 139, 34, 0.6); /* Pellicola verde con trasparenza */
+    z-index: 1;
+}
+
+header .logo,
+header nav, 
+header .logo-container{
+    position: relative;
+    z-index: 2; /* Portiamo il contenuto sopra l'overlay */
+}
+
+header .logo h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none; /* Rimuove i puntini */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Imposta il layout orizzontale */
+    gap: 1rem; /* Spaziatura tra i link */
+}
+header nav ul li a {
+    color: #fff; /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 1rem;
+	transition: color 0.3s;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+.doctor-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+	z-index:2;
+    white-space: nowrap;
+}
+header nav ul li a:hover {
+    text-decoration: underline; /* Aggiunge la sottolineatura al passaggio del mouse */
+}
+/* Media query per schermi più piccoli (fino a 768px di larghezza) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Disposizione verticale per i contenuti */
+        align-items: center;
+        height: auto; /* Altezza adattabile */
+        padding: 1rem; /* Margine interno ridotto */
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem; /* Font più piccolo */
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Disposizione verticale per il menu */
+        align-items: center;
+        gap: 0.5rem; /* Riduce la spaziatura */
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem; /* Riduce leggermente il testo */
+    }
+
+    .logo-container {
+        flex-direction: column; /* Disposizione verticale per immagine e nome */
+        align-items: center;
+        gap: 0.3rem; /* Spaziatura più piccola */
+    }
+
+    .doctor-image {
+        width: 80px; /* Immagine più piccola */
+        height: 80px;
+    }
+
+    .doctor-name {
+        font-size: 0.9rem; /* Testo più piccolo */
+        text-align: center;
+    }
+}
+
+/* Media query per schermi extra piccoli (fino a 480px di larghezza) */
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 0.8rem; /* Riduce ulteriormente il font */
+    }
+
+    header .logo h1 {
+        font-size: 1.2rem; /* Riduce il titolo */
+    }
+
+    .doctor-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .doctor-name {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+#calendario iframe {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#home {
+    background: #86d770 ;
+    color: #fff;
+    padding: 4rem 1rem;
+}
+
+#home .btn {
+    background: #fff;
+    color: #007aff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#servizi .card-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#servizi .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007aff;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+#percorso {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#percorso h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2a7b42;
+}
+
+#percorso p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.step-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.step {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 1rem;
+    text-align: center;
+	 transition: transform 0.4s, box-shadow 0.4s;
+}
+.step .button-container {
+    margin-top: 1rem; /* Spazio sopra il pulsante */
+}
+.step .button-container button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #039BE5; /* Stesso colore del pulsante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.step .button-container button:hover {
+    background-color: #0288D1; /* Colore più scuro al passaggio del mouse */
+}
+
+
+.step .icon {
+    margin-bottom: 1rem;
+}
+
+.step .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.step h3 {
+    font-size: 1.2rem;
+    color: #2a7b42;
+    margin-bottom: 0.5rem;
+}
+
+.step p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+.btn, .card, form button {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #007aff;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card, .step, form, .btn {
+    border-radius: 15px;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Sezione Luoghi di Lavoro */
+#luoghi-lavoro {
+    background: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#luoghi-lavoro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2a7b42;
+}
+
+#luoghi-lavoro p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.location {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.location h3 {
+    font-size: 1.2rem;
+    color: #2a7b42;
+    margin-bottom: 0.5rem;
+}
+
+.location p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.location a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.location a:hover {
+    text-decoration: underline;
+}
+/* Sezione Contattami */
+#contattami {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contattami h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #228b22;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #228b22;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #1a6e17;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Effetto zoom al passaggio del mouse */
+}
+
+.social-icons img {
+    width: 48px; /* Dimensione icone */
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologo Nutrizionista</title>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.ccom/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+	@media (max-width:768px){
+	header nav ul {
+	flex-direction:column;
+	gap:0.5rem;
+	}
+	.step-container{
+	flex-direction:column;
+	}}
+	@media(max-width:480px){
+	header{
+	flex-direction:column;
+	text-align:center;
+	}
+	.doctor-image{
+	width: 80px;
+	height:80px;
+	}
+	.step{
+	width:100%;
+	}
+	h1, h2{
+	font-size:1.5 rem;
+	}}
+</style>
+
+	<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+	<h1>Nutrizione&Benessere</h1>
+	</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#contatti">Contattami</a></li>
+            <li><a href="#luoghi">Luoghi</a></li>
+			<li><a href="#patologie">Patologie</a></li>
+        </ul>
+    </nav>
+	<div class="logo-container">
+        <img src="immagini/profilo.jpg" alt="Dr. Zanoli Adrian Fabio" class="doctor-image">
+        <span class="doctor-name">Dr. Zanoli Adrian Fabio</span>
+    </div>
+</header>
+
+
+    <section id="home" style="padding: 2rem; background-color: #eafbea; text-align: center;">
+    <h1 style="font-size: 2rem; color: #2c5e2c; margin-bottom: 1rem;">Chi sono</h1>
+    <p style="font-size: 1.2rem; color: #333; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+        Sono il Dr. Adrian Zanoli, biologo nutrizionista specializzato in intolleranze alimentari, diete basate sulla nutrigenetica e nutrizione clinica. Mi occupo di creare diete personalizzate e di offrire consulenze mirate per migliorare il tuo benessere, anche in presenza di <a href="#patologie">patologie</a> o in condizioni di disbiosi intestinale.
+    </p>
+    <p style="font-size: 1.2rem; color: #333; line-height: 1.8; max-width: 800px; margin: 1rem auto 2rem;">
+        Attraverso analisi avanzate, come quelle del microbiota intestinale, ti aiuto a individuare le soluzioni migliori per raggiungere uno stile di vita sano ed equilibrato. Insieme, possiamo trovare il percorso giusto per te.
+    </p>
+    <a href="#luoghi" style="display: inline-block; padding: 0.8rem 1.5rem; background-color: #2c5e2c; color: #fff; text-decoration: none; font-size: 1rem; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">
+        Scopri dove ricevo
+    </a>
+</section>
+
+
+
+	<section id="contattami">
+	<div id="contatti"></div>
+    <h2>Contattami</h2>
+    <div class="contact-info">
+        <p><strong>Telefono:</strong> <a href="tel:+393486995333">+39 348 699 5333</a></p>
+        <p><strong>Email:</strong> <a href="mailto:afzanoli@hotmail.it">afzanoli@hotmail.it</a></p>
+    </div>
+    <div class="social-icons">
+        <a href="https://wa.me/393486995333" target="_blank" title="WhatsApp">
+            <img src="https://img.icons8.com/fluency/48/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/dr.zanoliadrianfabio" target="_blank" title="Facebook">
+            <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/adrian-fabio-zanoli-2605453b/" target="_blank" title="LinkedIn">
+            <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+</section>
+
+<section id="luoghi-lavoro">
+<div id="luoghi"></div>
+    <h2>Luoghi di Lavoro</h2>
+    <p>Scopri i luoghi dove offro i miei servizi. Trova quello più vicino a te e prenota un appuntamento!</p>
+    <div class="locations">
+        <div class="location">
+            <h3>Habilita</h3>
+            <p>Bergamo, Osio Sotto, Sarnico</p>
+            <p><strong>Telefono:</strong> 0354815511</p>
+            <p><strong>Sito web:</strong> <a href="https://habilita.it/" target="_blank">habilita.it</a></p>
+            <p><strong>Orari:</strong> Martedì, Giovedì, Venerdì e Sabato mattina</p>
+        </div>
+        <div class="location">
+            <h3>Poliambulatorio Specialistico Cooperativa Sociale Monterosso Onlus</h3>
+            <p>Martinengo</p>
+            <p><strong>Telefono:</strong> 0363904888</p>
+            <p><strong>Sito web:</strong> <a href="https://www.policsm.it/consulenza-nutrizionale-intolleranze-alimentari/" target="_blank">policsm.it</a></p>
+            <p><strong>Orari:</strong> Venerdì pomeriggio</p>
+        </div>
+        <div class="location">
+            <h3>Bergamo Sanità</h3>
+            <p>Nembro</p>
+            <p><strong>Telefono:</strong> 035521838</p>
+            <p><strong>Sito web:</strong> <a href="https://www.bergamosanita.it/biologo-nutrizionista.html" target="_blank">bergamosanita.it</a></p>
+            <p><strong>Orari:</strong> Venerdì pomeriggio</p>
+        </div>
+        <div class="location">
+            <h3>Residenza Primavera</h3>
+            <p>Albano S. Alessandro, Treviolo</p>
+            <p><strong>Telefono:</strong> 0354528695</p>
+            <p><strong>Sito web:</strong> <a href="https://www.poliambulatoriprimavera.it/visite-e-trattamenti/visita-nutrizionistica-bergamo/" target="_blank">poliambulatoriprimavera.it</a></p>
+            <p><strong>Orari:</strong> Giovedì mattina</p>
+        </div>
+        <div class="location">
+            <h3>Poliambulatorio Fondazione Rota</h3>
+            <p>Almenno S. Salvatore</p>
+            <p><strong>Telefono:</strong> 035642295</p>
+            <p><strong>Sito web:</strong> <a href="https://www.poliambulatoriofondazionerota.it/medicina-specialistica/consulenza-nutrizionale/" target="_blank">fondazionerota.it</a></p>
+            <p><strong>Orari:</strong> Lunedì mattina e Martedì pomeriggio</p>
+        </div>
+        <div class="location">
+            <h3>White Clinic</h3>
+            <p>San Paolo d’Argon</p>
+            <p><strong>Telefono:</strong> 0350075019</p>
+            <p><strong>Sito web:</strong> <a href="https://white-clinic.it/doctors/dott-adrian-fabio-zanoli" target="_blank">white-clinic.it</a></p>
+            <p><strong>Orari:</strong> Giovedì pomeriggio</p>
+        </div>
+        <div class="location">
+            <h3>Ambulatori Grassobbio</h3>
+            <p>Via Cristoforo Colombo, 3, 24050 Grassobbio BG</p>
+            <p><strong>Telefono:</strong> 035335866</p>
+            <p><strong>Sito web:</strong> <a href="http://www.ambulatorigrassobbio.com" target="_blank">ambulatorigrassobbio.com</a></p>
+            <p><strong>Orari:</strong> Martedì pomeriggio</p>
+        </div>
+        <div class="location">
+            <h3>Polispecialistica di Mariano di Dalmine</h3>
+            <p>Dalmine</p>
+            <p><strong>Telefono:</strong> 3757908619</p>
+             <p><strong>Sito web:</strong> <a href="https://www.cupsolidale.it/medico/302d788c3c66ec62889360692caa21e6" target="_blank">cupsolidale.com</a></p>
+			<p><strong>Orari:</strong> Lunedì pomeriggio</p>
+		</div>
+		<div class="location">
+            <h3>Studio Grisa</h3>
+            <p>Piazza Vittorio Veneto, 5, 23801 Calolziocorte (LC)</p>
+            <p><strong>Telefono:</strong> 0341 64 25 13</p>
+             <p><strong>Sito web:</strong> <a href="https://www.studiogrisa.plus/contact-5" target="_blank">www.studiogrisa.plus</a></p>
+			<p><strong>Orari:</strong> Mercoledì pomeriggio</p>
+		</div>
+    </div>
+</section>
+
+  
+<section id="percorso">
+<div id="servizi"></div>
+    <h2>Il Percorso del Nutrizionista</h2>
+    <p>
+        Scopri i punti fondamentali per un percorso nutrizionale mirato al raggiungimento dei tuoi obiettivi, 
+        grazie a un approccio personalizzato e scientificamente validato.
+    </p>
+    <div class="step-container">
+        <div class="step">
+            <div class="icon">
+                <img src="immagini/checkup.png" alt="Primo Contatto">
+            </div>
+            <h3>Prima visita</h3>
+            <p>Un incontro preliminare per raccogliere informazioni e avviare il percorso nutrizionale.</p>
+        </div>
+        <div class="step">
+            <div class="icon">
+                <img src="immagini/mela.png" alt="Visita">
+            </div>
+            <h3>Visita</h3>
+            <p>Analisi approfondita con strumenti avanzati per definire obiettivi e strategie personalizzate.</p>
+        </div>
+        <div class="step">
+            <div class="icon">
+                <img src="immagini/dieta.png" alt="Dieta">
+            </div>
+            <h3>Dieta Personalizzata</h3>
+            <p>Un piano alimentare su misura, costruito in base alle tue esigenze, preferenze, e le condizioni cliniche</p>
+        </div>
+        <div class="step">
+            <div class="icon">
+                <img src="immagini/visita.png" alt="Visite di controllo">
+            </div>
+            <h3>Visite di controllo</h3>
+            <p>Monitoraggio costante per valutare i progressi e apportare eventuali modifiche.</p>
+        </div>
+		
+    </div>
+</section>
+<section id="patologie" style="background-color: #f8f8f8; padding: 3rem 1.5rem;">
+	<h2 style="font-size: 2rem; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto;">
+        Mi occupo di sviluppare piani alimentari adatti a condizioni patologiche come:</h2>
+    <div style="max-width: 1200px; margin: 0 auto; text-align: left;">
+        <!-- Sezione Endocrinologia -->
+        <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Patologie Endocrinologiche</h3>
+            <ul style="line-height: 1.8; padding-left: 1.5rem; color: #333;">
+                <li>Diabete</li>
+                <li>Insulino-Resistenza</li>
+                <li>Iperinsulinemia</li>
+                <li>Dislipidemie (Ipercolesterolemia, Ipertrigliceridemia)</li>
+                <li>Tiroiditi</li>
+            </ul>
+        </div>
+		<div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Patologie Cardiovascolari</h3>
+            <ul style="line-height: 1.8; padding-left: 1.5rem; color: #333;">
+                <li>Ipertensione</li>
+                <li>Aritmie</li>
+                <li>Cardiopatie</li>
+                <li>Vasculopatie</li>
+            </ul>
+        </div>
+
+        <!-- Sezione Patologie Autoimmuni -->
+        <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Patologie Autoimmuni</h3>
+            <ul style="line-height: 1.8; padding-left: 1.5rem; color: #333;">
+                <li>Tiroidite di Hashimoto</li>
+                <li>Psoriasi</li>
+                <li>Artrite Reumatoide</li>
+                <li>Sclerosi Multipla</li>
+                <li>Lupus</li>
+                <li>Malattia di Crohn</li>
+                <li>Sjogren</li>
+                <li>Sclerodermia</li>
+            </ul>
+        </div>
+
+        <!-- Sezione Gastroenterologia -->
+        <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Patologie Gastrointestinali</h3>
+            <ul style="line-height: 1.8; padding-left: 1.5rem; color: #333;">
+                <li>Sindrome del Colon Irritabile</li>
+                <li>SIBO</li>
+                <li>Gastrite</li>
+                <li>Reflusso</li>
+                <li>Diverticoli</li>
+                <li>Stipsi</li>
+                <li>Diarrea</li>
+                <li>Disbiosi</li>
+                <li>MICI (Malattie Infiammatorie Croniche Intestinali)</li>
+            </ul>
+        </div>
+
+        <!-- Altre Patologie -->
+        <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Altre Patologie e Condizioni</h3>
+            <ul style="line-height: 1.8; padding-left: 1.5rem; color: #333;">
+                <li>Ovaio Policistico (PCOS)</li>
+                <li>Infertilità</li>
+                <li>Sindrome Premestruale</li>
+                <li>Celiachia</li>
+                <li>Sensibilità al Nichel</li>
+                <li>Intolleranza al Lattosio</li>
+                <li>Obesità, sovrappeso</li>
+                <li>Patologie Renali e Pancreatiti</li>
+            </ul>
+        </div>
+
+        <!-- Diete Personalizzate -->
+        <div style="margin-bottom: 2rem;">
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Diete Personalizzate</h3>
+            <ul style="line-height: 1.8; padding-left: 1.5rem; color: #333;">
+                <li>Dieta chetogenica</li>
+                <li>Dieta low FODMAP</li>
+                <li>Dieta vegetariana o vegana</li>
+                <li>Diete low-carb o high-fat</li>
+                <li>Dieta mediterranea</li>
+                <li>Dieta anti-infiammatoria</li>
+                <li>Dieta mima-digiuno</li>
+            </ul>
+        </div>
+
+        <!-- Per sportivi -->
+        <div>
+            <h3 style="font-size: 1.8rem; color: #2c5e2c; border-bottom: 2px solid #2c5e2c; padding-bottom: 0.5rem;">Alimentazione per Sportivi</h3>
+            <p style="line-height: 1.8; color: #333;">Offro piani alimentari specifici per sportivi d’élite o per chi pratica attività fisica, con l’obiettivo di migliorare le performance e il benessere generale.</p>
+        </div>
+    </div>
+</section>
+
+   
+
+
+    <footer>
+	<section>
+    <h2>Contattami</h2>
+    <div class="contact-info">
+        <p><strong>Telefono:</strong> <a href="tel:+393486995333">+39 348 699 5333</a></p>
+        <p><strong>Email:</strong> <a href="mailto:afzanoli@hotmail.it">afzanoli@hotmail.it</a></p>
+    </div>
+    <div class="social-icons">
+        <a href="https://wa.me/393486995333" target="_blank" title="WhatsApp">
+            <img src="https://img.icons8.com/fluency/48/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/dr.zanoliadrianfabio" target="_blank" title="Facebook">
+            <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/adrian-fabio-zanoli-2605453b/" target="_blank" title="LinkedIn">
+            <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+</section>
+        <p>&copy; 2025 dott. Zanoli Adrian Fabio - biologo nutrizionista. Tutti i diritti riservati.</p>
+		<a target="_blank" href="https://icons8.com/icon/18419/vegetarian-food" style="font-size:8px">Vegetarian Food</a><a style="font-size:8px"> icon by</a> <a target="_blank" href="https://icons8.com"style="font-size:8px">Icons8</a>
+    </footer>
+</body>
+</html>
